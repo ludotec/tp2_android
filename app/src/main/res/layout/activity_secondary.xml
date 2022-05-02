@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="266dp"
+        android:layout_height="282dp"
+        android:layout_marginTop="15dp"
+        android:contentDescription="@string/todo"
+        android:src="@drawable/imagetest"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/conversor"
+            android:textAllCaps="false"
+            android:textColor="@color/design_default_color_primary"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/plain_text_input"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:autofillHints=""
+            android:hint="@string/hint_select"
+            android:inputType="text"
+            android:textColorHint="#78909C"
+            android:textSize="23sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:text="@string/seleccion_moneda"
+            android:textAllCaps="false"
+            android:textColor="#d50854"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/r_button_dolar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/dolar"
+            android:textSize="25sp"
+            android:buttonTint="#d50854"
+            android:textStyle="bold"/>
+
+
+        <RadioButton
+            android:id="@+id/r_button_euro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/euro"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:buttonTint="#d50854"/>
+
+        <RadioButton
+            android:id="@+id/r_button_real"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="180dp"
+            android:text="@string/real"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:buttonTint="#d50854"/>
+
+        <EditText
+            android:id="@+id/plain_text_resultado"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:autofillHints=""
+            android:hint="@string/resultado"
+            android:inputType="text"
+            android:backgroundTint="#d50854"
+            android:textColorHint="#78909C"
+            android:textSize="23sp" />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/convertir"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_margin="20dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#6002ee"
+        android:text="@string/convertir"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/reinicia"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <Button
+        android:id="@+id/reinicia"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_margin="20dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#6002ee"
+        android:text="@string/reiniciar"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/convertir"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
