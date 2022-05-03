@@ -8,8 +8,8 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="266dp"
-        android:layout_height="282dp"
+        android:layout_width="207dp"
+        android:layout_height="198dp"
         android:layout_marginTop="15dp"
         android:contentDescription="@string/todo"
         android:src="@drawable/imagetest"
@@ -49,7 +49,7 @@
             android:autofillHints=""
             android:hint="@string/hint_select"
             android:inputType="text"
-            android:textColorHint="#78909C"
+            android:textColorHint="@color/lightgray_custom"
             android:textSize="23sp" />
 
         <TextView
@@ -59,7 +59,7 @@
             android:layout_marginTop="20dp"
             android:text="@string/seleccion_moneda"
             android:textAllCaps="false"
-            android:textColor="#d50854"
+            android:textColor="@color/purple_custom"
             android:textSize="25sp"
             android:textStyle="bold" />
 
@@ -70,7 +70,7 @@
             android:layout_marginTop="20dp"
             android:text="@string/dolar"
             android:textSize="25sp"
-            android:buttonTint="#d50854"
+            android:buttonTint="@color/purple_custom"
             android:textStyle="bold"/>
 
 
@@ -81,7 +81,7 @@
             android:text="@string/euro"
             android:textSize="25sp"
             android:textStyle="bold"
-            android:buttonTint="#d50854"/>
+            android:buttonTint="@color/purple_custom"/>
 
         <RadioButton
             android:id="@+id/r_button_real"
@@ -91,7 +91,7 @@
             android:text="@string/real"
             android:textSize="25sp"
             android:textStyle="bold"
-            android:buttonTint="#d50854"/>
+            android:buttonTint="@color/purple_custom"/>
 
         <EditText
             android:id="@+id/plain_text_resultado"
@@ -100,10 +100,10 @@
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="20dp"
             android:autofillHints=""
+            android:backgroundTint="@color/purple_custom"
             android:hint="@string/resultado"
             android:inputType="text"
-            android:backgroundTint="#d50854"
-            android:textColorHint="#78909C"
+            android:textColorHint="@color/lightgray_custom"
             android:textSize="23sp" />
 
     </LinearLayout>
@@ -115,7 +115,7 @@
         android:layout_height="60dp"
         android:layout_margin="20dp"
         android:layout_marginTop="10dp"
-        android:backgroundTint="#6002ee"
+        android:backgroundTint="@color/teal_custom"
         android:text="@string/convertir"
         android:textAllCaps="false"
         android:textSize="20sp"
@@ -130,7 +130,7 @@
         android:layout_height="60dp"
         android:layout_margin="20dp"
         android:layout_marginTop="10dp"
-        android:backgroundTint="#6002ee"
+        android:backgroundTint="@color/teal_custom"
         android:text="@string/reiniciar"
         android:textAllCaps="false"
         android:textSize="20sp"

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">tp_2</string>
+    <string name="hint_select">Entrez le montant en ARS</string>
+    <string name="seleccion_moneda">Sélectionnez une devise</string>
+    <string name="conversor">Convertisseur de devises</string>
+    <string name="convertir">Convertir</string>
+    <string name="reiniciar">Redémarrer</string>
+    <string name="reset" translatable="false">Réinit</string>
+    <string name="sumar">Ajouter</string>
+    <string name="ocultar">Cacher</string>
+    <string name="restar">Soust</string>
+    <string name="resultado">Résultat</string>
+</resources>

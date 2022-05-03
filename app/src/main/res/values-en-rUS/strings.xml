@@ -2,4 +2,13 @@
 <resources>
     <string name="app_name">tp_2</string>
     <string name="restar">Subst</string>
-</resources>
+    <string name="ocultar" translatable="false">Hidden</string>
+    <string name="sumar" translatable="false">Add</string>
+    <string name="reset" translatable="false">Reset</string>
+    <string name="reiniciar" translatable="false">Restart</string>
+    <string name="convertir" translatable="false">Convert</string>
+    <string name="conversor" translatable="false">Currency Converter</string>
+    <string name="seleccion_moneda" translatable="false">Select Currency</string>
+    <string name="hint_select" translatable="false">Enter Amount in ARS</string>
+    <string name="resultado">Result</string>
+   </resources>
