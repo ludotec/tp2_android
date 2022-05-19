@@ -41,14 +41,15 @@
             android:textStyle="bold" />
 
         <EditText
-            android:id="@+id/plain_text_input"
+            android:id="@+id/edtSecondaryActivityIngreseMonto"
             android:layout_width="260dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="20dp"
             android:autofillHints=""
             android:hint="@string/hint_select"
-            android:inputType="text"
+            android:inputType="number"
+            android:maxLength="9"
             android:textColorHint="@color/lightgray_custom"
             android:textSize="23sp" />
 
@@ -63,8 +64,14 @@
             android:textSize="25sp"
             android:textStyle="bold" />
 
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checkedButton="@id/btnSecondaryActivityDolar">
+
         <RadioButton
-            android:id="@+id/r_button_dolar"
+            android:id="@+id/btnSecondaryActivityDolar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
@@ -75,7 +82,7 @@
 
 
         <RadioButton
-            android:id="@+id/r_button_euro"
+            android:id="@+id/btnSecondaryActivityEuro"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/euro"
@@ -84,7 +91,7 @@
             android:buttonTint="@color/purple_custom"/>
 
         <RadioButton
-            android:id="@+id/r_button_real"
+            android:id="@+id/btnSecondaryActivityReal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="180dp"
@@ -92,51 +99,57 @@
             android:textSize="25sp"
             android:textStyle="bold"
             android:buttonTint="@color/purple_custom"/>
+        </RadioGroup>
 
-        <EditText
-            android:id="@+id/plain_text_resultado"
+        <TextView
+            android:id="@+id/txvSecondaryActivityResultado"
             android:layout_width="260dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="20dp"
-            android:autofillHints=""
-            android:backgroundTint="@color/purple_custom"
             android:hint="@string/resultado"
-            android:inputType="text"
             android:textColorHint="@color/lightgray_custom"
             android:textSize="23sp" />
+        <View
+            android:layout_width="260dp"
+            android:layout_height="2dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/purple_custom"/>
+
 
     </LinearLayout>
 
 
     <Button
-        android:id="@+id/convertir"
+        android:id="@+id/btnSecondaryActivityConvertir"
         android:layout_width="150dp"
         android:layout_height="60dp"
         android:layout_margin="20dp"
         android:layout_marginTop="10dp"
         android:backgroundTint="@color/teal_custom"
+        android:onClick="Convert"
         android:text="@string/convertir"
         android:textAllCaps="false"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/reinicia"
+        app:layout_constraintEnd_toStartOf="@+id/btnSecondaryActivityReiniciar"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
     <Button
-        android:id="@+id/reinicia"
+        android:id="@+id/btnSecondaryActivityReiniciar"
         android:layout_width="150dp"
         android:layout_height="60dp"
         android:layout_margin="20dp"
         android:layout_marginTop="10dp"
         android:backgroundTint="@color/teal_custom"
+        android:onClick="Restart"
         android:text="@string/reiniciar"
         android:textAllCaps="false"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/convertir"
+        app:layout_constraintStart_toEndOf="@+id/btnSecondaryActivityConvertir"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
 

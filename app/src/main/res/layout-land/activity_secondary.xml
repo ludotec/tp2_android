@@ -32,6 +32,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
             android:text="@string/conversor"
             android:textAllCaps="false"
             android:textColor="@color/design_default_color_primary"
@@ -39,14 +40,13 @@
             android:textStyle="bold" />
 
         <EditText
-            android:id="@+id/plain_text_input"
+            android:id="@+id/edtSecondaryActivityIngreseMonto"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="10dp"
             android:autofillHints=""
             android:hint="@string/hint_select"
-            android:inputType="text"
+            android:inputType="number"
             android:textColorHint="@color/lightgray_custom"
             android:textSize="23sp" />
 
@@ -54,58 +54,68 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="10dp"
             android:text="@string/seleccion_moneda"
             android:textAllCaps="false"
             android:textColor="@color/purple_custom"
             android:textSize="25sp"
             android:textStyle="bold" />
 
-        <RadioButton
-            android:id="@+id/r_button_dolar"
+        <RadioGroup
+            android:id="@+id/radio_group"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:checkedButton="@id/btnSecondaryActivityDolar">
+
+        <RadioButton
+            android:id="@+id/btnSecondaryActivityDolar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:buttonTint="@color/purple_custom"
             android:text="@string/dolar"
-            android:textSize="25sp"
+            android:textSize="15sp"
             android:textStyle="bold" />
 
 
         <RadioButton
-            android:id="@+id/r_button_euro"
+            android:id="@+id/btnSecondaryActivityEuro"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:buttonTint="@color/purple_custom"
             android:text="@string/euro"
-            android:textSize="25sp"
+            android:textSize="15sp"
             android:textStyle="bold" />
 
         <RadioButton
-            android:id="@+id/r_button_real"
+            android:id="@+id/btnSecondaryActivityReal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="180dp"
             android:buttonTint="@color/purple_custom"
             android:text="@string/real"
-            android:textSize="25sp"
+            android:textSize="15sp"
             android:textStyle="bold" />
-
+        </RadioGroup>
         <TextView
-            android:id="@+id/plain_text_resultado"
+            android:id="@+id/txvSecondaryActivityResultado"
             android:layout_width="260dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="20dp"
             android:hint="@string/resultado"
             android:textColorHint="@color/lightgray_custom"
             android:textSize="23sp" />
+
+        <View
+            android:layout_width="260dp"
+            android:layout_height="2dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/purple_custom"/>
+
 
     </LinearLayout>
 
 
     <Button
-        android:id="@+id/convertir"
+        android:id="@+id/btnSecondaryActivityConvertir"
         android:layout_width="150dp"
         android:layout_height="60dp"
         android:layout_marginBottom="20dp"
@@ -119,7 +129,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/reinicia"
+        android:id="@+id/btnSecondaryActivityReiniciar"
         android:layout_width="150dp"
         android:layout_height="60dp"
         android:layout_marginBottom="20dp"

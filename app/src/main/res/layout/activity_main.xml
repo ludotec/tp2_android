@@ -20,12 +20,12 @@
         tools:ignore="MissingConstraints" />
 
     <TextView
-        android:id="@+id/number"
+        android:id="@+id/txvMainActivityNumber"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:text="@string/number_label"
-        android:textSize="35sp"
+        android:textSize="26sp"
         android:textStyle="bold"
         android:textColor="@color/gray_custom"
         app:layout_constraintEnd_toEndOf="parent"
@@ -44,11 +44,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.23"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/number"
+        app:layout_constraintTop_toTopOf="@id/txvMainActivityNumber"
         app:layout_constraintVertical_bias="0.3">
 
         <Button
-            android:id="@+id/sumar"
+            android:id="@+id/btnMainActivityAdd"
             android:layout_width="120dp"
             android:layout_height="60dp"
             android:layout_marginTop="40dp"
@@ -59,7 +59,7 @@
             android:textStyle="bold" />
 
         <Button
-            android:id="@+id/zoom"
+            android:id="@+id/btnMainActivityZoom"
             android:layout_width="120dp"
             android:layout_height="60dp"
             android:layout_marginTop="12dp"
@@ -70,13 +70,13 @@
             android:textStyle="bold" />
 
         <Button
-            android:id="@+id/ocultar"
+            android:id="@+id/btnMainActivityHidden"
             android:layout_width="120dp"
             android:layout_height="60dp"
             android:layout_marginTop="12dp"
+            android:backgroundTint="@color/teal_custom"
             android:text="@string/ocultar"
             android:textAllCaps="false"
-            android:backgroundTint="@color/teal_custom"
             android:textSize="20sp"
             android:textStyle="bold" />
     </LinearLayout>
@@ -92,11 +92,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.841"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/number"
+        app:layout_constraintTop_toTopOf="@id/txvMainActivityNumber"
         app:layout_constraintVertical_bias="0.3">
 
         <Button
-            android:id="@+id/restar"
+            android:id="@+id/btnMainActivitySubstract"
             android:layout_width="120dp"
             android:layout_height="60dp"
             android:layout_marginTop="40dp"
@@ -107,7 +107,7 @@
             android:textStyle="bold" />
 
         <Button
-            android:id="@+id/zoom2"
+            android:id="@+id/btnMainActivityZoomMinus"
             android:layout_width="120dp"
             android:layout_height="60dp"
             android:layout_marginTop="12dp"
@@ -118,7 +118,7 @@
             android:textStyle="bold" />
 
         <Button
-            android:id="@+id/reset"
+            android:id="@+id/btnMainActivityReset"
             android:layout_width="120dp"
             android:layout_height="60dp"
             android:layout_marginTop="12dp"

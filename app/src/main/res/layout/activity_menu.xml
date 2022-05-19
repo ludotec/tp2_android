@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuActivity">
+
+    <ImageView
+        android:id="@+id/menuImageView"
+        android:layout_width="151dp"
+        android:layout_height="246dp"
+        android:layout_marginTop="27dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/imagetest"
+        android:contentDescription="@string/todo" />
+
+    <Button
+        android:id="@+id/btnMenuMainActivity"
+        android:layout_width="240dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/btn_main_activity"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/menuImageView"
+        app:layout_constraintStart_toStartOf="@+id/menuImageView"
+        app:layout_constraintTop_toBottomOf="@+id/menuImageView" />
+
+    <Button
+        android:id="@+id/btnMenuOtherActivity"
+        android:layout_width="240dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:text="@string/btn_other_activity"
+        app:layout_constraintEnd_toEndOf="@+id/btnMenuMainActivity"
+        app:layout_constraintStart_toStartOf="@+id/btnMenuMainActivity"
+        app:layout_constraintTop_toBottomOf="@+id/btnMenuMainActivity" />
+</androidx.constraintlayout.widget.ConstraintLayout>

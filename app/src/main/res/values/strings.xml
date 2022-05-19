@@ -17,4 +17,6 @@
     <string name="real" translatable="false">REAL (BRASIL)</string>
     <string name="todo" translatable="false">TODO</string>
     <string name="resultado" translatable="false">Resultado</string>
+    <string name="btn_main_activity">Main Activity</string>
+    <string name="btn_other_activity">Secondary Activity</string>
 </resources>
