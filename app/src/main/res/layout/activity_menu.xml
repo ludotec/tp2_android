@@ -8,20 +8,19 @@
 
     <ImageView
         android:id="@+id/menuImageView"
-        android:layout_width="151dp"
-        android:layout_height="246dp"
-        android:layout_marginTop="27dp"
+        android:layout_width="127dp"
+        android:layout_height="214dp"
+        android:contentDescription="@string/todo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/imagetest"
-        android:contentDescription="@string/todo" />
+        app:srcCompat="@drawable/imagetest" />
 
     <Button
         android:id="@+id/btnMenuMainActivity"
         android:layout_width="240dp"
         android:layout_height="60dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="-20dp"
         android:text="@string/btn_main_activity"
         android:textAllCaps="false"
         android:textSize="20sp"
@@ -33,7 +32,7 @@
         android:id="@+id/btnMenuOtherActivity"
         android:layout_width="240dp"
         android:layout_height="60dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:textAllCaps="false"
         android:textSize="20sp"
         android:text="@string/btn_other_activity"

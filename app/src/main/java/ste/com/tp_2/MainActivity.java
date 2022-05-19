@@ -131,7 +131,7 @@ public class MainActivity extends AppCompatActivity {
     };
     private final View.OnClickListener BtnHiddenListener = new View.OnClickListener(){
         public void onClick(View v){
-            txvMainActivityNumber.setTextSize(0);
+            txvMainActivityNumber.setVisibility(View.INVISIBLE);
         }
     };
     private final View.OnClickListener BtnResetListener = new View.OnClickListener(){
@@ -139,7 +139,7 @@ public class MainActivity extends AppCompatActivity {
         public void onClick(View v){
             numberAdd = 0;
             txvMainActivityNumber.setText(numberAdd.toString());
-            txvMainActivityNumber.setTextSize(textSize);
+            txvMainActivityNumber.setVisibility(View.VISIBLE);
         }
     };
 
