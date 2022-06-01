@@ -11,4 +11,5 @@
     <string name="ocultar">Cacher</string>
     <string name="restar">Soust</string>
     <string name="resultado">Résultat</string>
+    <string name="volver" translatable="false">Retour</string>
 </resources>

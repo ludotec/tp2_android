@@ -5,6 +5,7 @@ import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
@@ -20,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     private Button btnMainActivitySubstract, btnMainActivityZoom, btnMainActivityZoomMinus,
-            btnMainActivityHidden, btnMainActivityReset, btnMainActivityAdd;
+            btnMainActivityHidden, btnMainActivityReset, btnMainActivityAdd, btnMainActivityBack;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -65,6 +66,14 @@ public class MainActivity extends AppCompatActivity {
         btnMainActivityZoomMinus  = findViewById(R.id.btnMainActivityZoomMinus);
         btnMainActivityHidden     = findViewById(R.id.btnMainActivityHidden);
         btnMainActivityReset      = findViewById(R.id.btnMainActivityReset);
+        btnMainActivityBack       = findViewById(R.id.btnMainActivityBack);
+
+
+        btnMainActivityBack.setOnClickListener(view -> {
+            Intent intent = new Intent(MainActivity.this, MenuActivity.class);
+            startActivity(intent);
+        });
+
     }
 
     private final View.OnClickListener BtnAddListener = new View.OnClickListener(){

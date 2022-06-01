@@ -30,7 +30,7 @@ public class SecondaryActivity extends AppCompatActivity {
     private RadioButton btnSecondaryActivityReal;
     private Button btnSecondaryActivityConvertir;
     private Button btnSecondaryActivityReiniciar;
-
+    private Button btnSecondaryActivityBack;
 
 
     CharSequence text = "Debes ingresar un monto!";
@@ -82,6 +82,13 @@ public class SecondaryActivity extends AppCompatActivity {
         btnSecondaryActivityReal         = findViewById(R.id.btnSecondaryActivityReal);
         btnSecondaryActivityConvertir    = findViewById(R.id.btnSecondaryActivityConvertir);
         btnSecondaryActivityReiniciar    = findViewById(R.id.btnSecondaryActivityReiniciar);
+        btnSecondaryActivityBack         = findViewById(R.id.btnSecondaryActivityBack);
+
+        btnSecondaryActivityBack.setOnClickListener(view -> {
+            Intent intent = new Intent(SecondaryActivity.this, MenuActivity.class);
+            startActivity(intent);
+        });
+
     }
 
     private View.OnClickListener BtnConvertListener = new View.OnClickListener() {
