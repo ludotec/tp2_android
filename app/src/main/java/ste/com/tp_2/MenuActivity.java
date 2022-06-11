@@ -19,6 +19,7 @@ public class MenuActivity extends AppCompatActivity {
     private void findViews(){
         Button btnMenuMainActivity = findViewById(R.id.btnMenuMainActivity);
         Button btnMenuOtherActivity = findViewById(R.id.btnMenuOtherActivity);
+        Button btnMenuContactActivity = findViewById(R.id.btnMenuContactActivity);
 
         btnMenuOtherActivity.setOnClickListener(view -> {
             Intent intent = new Intent(MenuActivity.this, SecondaryActivity.class);
@@ -27,6 +28,11 @@ public class MenuActivity extends AppCompatActivity {
 
         btnMenuMainActivity.setOnClickListener(view -> {
             Intent intent = new Intent(MenuActivity.this, MainActivity.class);
+            startActivity(intent);
+        });
+
+        btnMenuContactActivity.setOnClickListener(view -> {
+            Intent intent = new Intent(MenuActivity.this, ContactActivity.class);
             startActivity(intent);
         });
     }

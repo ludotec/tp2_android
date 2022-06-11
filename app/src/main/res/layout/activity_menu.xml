@@ -32,11 +32,24 @@
         android:id="@+id/btnMenuOtherActivity"
         android:layout_width="240dp"
         android:layout_height="60dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="6dp"
+        android:text="@string/btn_other_activity"
         android:textAllCaps="false"
         android:textSize="20sp"
-        android:text="@string/btn_other_activity"
         app:layout_constraintEnd_toEndOf="@+id/btnMenuMainActivity"
         app:layout_constraintStart_toStartOf="@+id/btnMenuMainActivity"
         app:layout_constraintTop_toBottomOf="@+id/btnMenuMainActivity" />
+
+    <Button
+        android:id="@+id/btnMenuContactActivity"
+        android:layout_width="240dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="6dp"
+        android:text="@string/contact_me"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/btnMenuOtherActivity"
+        app:layout_constraintStart_toStartOf="@+id/btnMenuOtherActivity"
+        app:layout_constraintTop_toBottomOf="@+id/btnMenuOtherActivity" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

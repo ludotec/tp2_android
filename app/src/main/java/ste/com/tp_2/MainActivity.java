@@ -16,9 +16,7 @@ public class MainActivity extends AppCompatActivity {
 
     private TextView txvMainActivityNumber;
     private Integer numberAdd;
-    private final float textSize = 25;
     private int count = 0;
-
 
     private Button btnMainActivitySubstract, btnMainActivityZoom, btnMainActivityZoomMinus,
             btnMainActivityHidden, btnMainActivityReset, btnMainActivityAdd, btnMainActivityBack;
@@ -37,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
         }
         numberAdd = 0;
         findviews();
+        float textSize = 25;
         txvMainActivityNumber.setTextSize(textSize);
         btnMainActivityAdd.setOnClickListener(BtnAddListener);
         btnMainActivitySubstract.setOnClickListener(BtnSubstractListener);
@@ -44,6 +43,12 @@ public class MainActivity extends AppCompatActivity {
         btnMainActivityZoomMinus.setOnClickListener(BtnZoomMinusListener);
         btnMainActivityHidden.setOnClickListener(BtnHiddenListener);
         btnMainActivityReset.setOnClickListener(BtnResetListener);
+
+        btnMainActivityBack.setOnClickListener(view -> {
+            Intent intent = new Intent(MainActivity.this, MenuActivity.class);
+            startActivity(intent);
+        });
+
     }
 
     // this event will enable the back
@@ -69,10 +74,7 @@ public class MainActivity extends AppCompatActivity {
         btnMainActivityBack       = findViewById(R.id.btnMainActivityBack);
 
 
-        btnMainActivityBack.setOnClickListener(view -> {
-            Intent intent = new Intent(MainActivity.this, MenuActivity.class);
-            startActivity(intent);
-        });
+
 
     }
 

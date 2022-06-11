@@ -5,9 +5,11 @@
       <map>
         <entry key="..\:/Users/Ludotec/AndroidStudioProjects/tp_2/app/src/main/res/layout-land/activity_main.xml" value="0.1" />
         <entry key="..\:/Users/Ludotec/AndroidStudioProjects/tp_2/app/src/main/res/layout-land/activity_secondary.xml" value="0.1" />
+        <entry key="..\:/Users/Ludotec/AndroidStudioProjects/tp_2/app/src/main/res/layout/activity_contact.xml" value="0.25" />
         <entry key="..\:/Users/Ludotec/AndroidStudioProjects/tp_2/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/Users/Ludotec/AndroidStudioProjects/tp_2/app/src/main/res/layout/activity_menu.xml" value="0.1" />
         <entry key="..\:/Users/Ludotec/AndroidStudioProjects/tp_2/app/src/main/res/layout/activity_secondary.xml" value="0.1" />
+        <entry key="..\:/Users/Ludotec/AndroidStudioProjects/tp_2/app/src/main/res/layout/contact.xml" value="0.1" />
       </map>
     </option>
   </component>

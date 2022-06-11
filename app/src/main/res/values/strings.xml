@@ -20,4 +20,6 @@
     <string name="btn_main_activity">Main Activity</string>
     <string name="btn_other_activity">Secondary Activity</string>
     <string name="volver">Volver</string>
+    <string name="call_me">Call me</string>
+    <string name="contact_me">Contact Me</string>
 </resources>
